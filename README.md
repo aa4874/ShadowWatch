@@ -1,21 +1,31 @@
-#  ShadowWatch – Credential Breach Detection Tool
+#  ShadowWatch – Credential Breach Detection System
 
-**ShadowWatch** is a lightweight security intelligence tool built using Python and SQL. It allows users or analysts to track and query breached email-password combinations, simulating real-world breach monitoring systems used in SOC teams.
+ShadowWatch is a security-focused tool that allows users to detect and analyze compromised credentials using a local breach database. Built with **Python, SQLite, and Flask**, it provides both a command-line interface and a lightweight web dashboard for email breach checking.
+
+---
 
 ##  Features
 
--  Insert breached credentials (email + hashed password + breach source)
--  Query if a specific email is compromised
--  SHA-256 hashing to protect stored passwords
--  Timestamped logs of all stored breach data
--  SQL-injection safe queries using parameterized inputs
+-  Store breached emails + SHA-256 hashed passwords
+-  Check if a specific email exists in known breaches
+-  SQL injection-safe lookups with parameterized queries
+-  Flask web interface for simple UI-based checks
+-  Timestamped logs for each breach entry
+
+---
 
 ##  Technologies Used
 
-- **Python 3**
-- **SQLite3 (SQL)**
-- `hashlib` for SHA-256 password hashing
-- Terminal-based interface (CLI)
+- Python 3.13  
+- SQLite3  
+- Flask (Jinja2 templates)  
+- SHA-256 via `hashlib`  
 
-##  Project Structure
+---
 
+##  Local Web Interface
+
+Run the Flask app to check breaches via browser:
+
+```bash
+python app.py
