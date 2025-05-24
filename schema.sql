@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS breaches (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL,
+    password_hash TEXT NOT NULL,
+    breach_source TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
