@@ -29,3 +29,7 @@ Run the Flask app to check breaches via browser:
 
 ```bash
 python app.py
+
+##  License
+
+This project is licensed under the [MIT License](LICENSE).
