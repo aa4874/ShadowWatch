@@ -1,35 +1,36 @@
-#  ShadowWatch – Credential Breach Detection System
+# ShadowWatch
 
-ShadowWatch is a security-focused tool that allows users to detect and analyze compromised credentials using a local breach database. Built with **Python, SQLite, and Flask**, it provides both a command-line interface and a lightweight web dashboard for email breach checking.
-
----
+**A SQL-based credential breach detection system** built to monitor and flag leaked or insecure login data, empowering early detection of suspicious activity.
 
 ##  Features
+- Simulates credential breaches using test datasets
+- Detects duplicate or weak passwords (e.g., "123456", "admin")
+- Analyzes login attempts for anomalies
+- Uses SQL queries for efficient scanning
+- [Optional] Integrates with Wireshark or packet logs
 
--  Store breached emails + SHA-256 hashed passwords
--  Check if a specific email exists in known breaches
--  SQL injection-safe lookups with parameterized queries
--  Flask web interface for simple UI-based checks
--  Timestamped logs for each breach entry
+##  Tech Stack
+- SQL (SQLite or MySQL)
+- Python (for automation or scripting)
+- Wireshark (for packet analysis simulation)
+- Git/GitHub for version control
 
----
+##  File Structure
+- `/data`: Sample breached credentials
+- `/src`: SQL scripts and logic
+- `/logs`: Output of scans or reports
 
-##  Technologies Used
+##  How to Use
+1. Clone the repo  
+2. Import sample data into your SQL tool  
+3. Run `scan.sql` to detect weak/reused credentials  
+4. (Optional) Add new `.csv` files to `/data` and re-run the query
 
-- Python 3.13  
-- SQLite3  
-- Flask (Jinja2 templates)  
-- SHA-256 via `hashlib`  
+##  Inspiration
+Built as part of my cybersecurity studies at Drexel University to practice database skills, security logic, and breach simulation.
 
----
-
-##  Local Web Interface
-
-Run the Flask app to check breaches via browser:
-
-```bash
-python app.py
+## 📷 Screenshots
+*(Add a screenshot of SQL output or code execution here)*
 
 ##  License
-
-This project is licensed under the [MIT License](LICENSE).
+MIT License
