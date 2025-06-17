@@ -29,8 +29,5 @@
 ##  Inspiration
 Built as part of my cybersecurity studies at Drexel University to practice database skills, security logic, and breach simulation.
 
-## 📷 Screenshots
-*(Add a screenshot of SQL output or code execution here)*
-
 ##  License
 MIT License
